@@ -1,0 +1,14 @@
+{
+  "slide_count": 1,
+  "validation": [
+    {
+      "slide": 1,
+      "native_shapes": 343,
+      "native_connectors": 112,
+      "embedded_images": 0
+    }
+  ],
+  "text_overflow_warnings": [],
+  "feature_gate_and_time_encoding_combined": true,
+  "model": "FeatureAttentionRiskLSTM(n_features=12, hidden=64, num_layers=2)"
+}

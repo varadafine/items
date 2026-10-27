@@ -1,0 +1,26 @@
+{
+  "timestamp": 0,
+  "position": [0, 0, -10],
+  "velocity": [0, 0, 0],
+  "altitude": 10,
+  "speed": 0,
+  "trajectory": [],
+  "intent": "TRANSIT",
+  "intent_confidence": 0.5,
+  "intent_probabilities": [0.33, 0.33, 0.34],
+  "uncertainty": 0.5,
+  "risk_score": 0.3,
+  "risk_breakdown": {
+    "detection_probability": 0.3,
+    "altitude_risk": 0.2,
+    "loiter_risk": 0.0,
+    "proximity_risk": 0.1,
+    "predictability_risk": 0.2
+  },
+  "risk_explanation": [
+    "✓ LOW RISK: Minimal exposure"
+  ],
+  "state": "TRANSIT",
+  "counterfactual_risk": 0.35,
+  "state_history": []
+}

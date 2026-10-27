@@ -1,0 +1,45 @@
+# Python bytecode and tool caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments and local environment files
+.venv/
+.cache/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# Local secrets and credentials
+**/.streamlit/secrets.toml
+**/.streamlit/credentials.toml
+*.pem
+*.key
+credentials*.json
+
+# Editors and operating-system metadata
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local Codex/document rendering artifacts
+.chrome-slide-render/
+.codex-slide-render/
+.codex_review_v1/
+.codex_tmp/
+.docx_review/
+tmp/
+
+# Logs and scratch files
+*.log
+*.tmp
+*.bak
+~$*

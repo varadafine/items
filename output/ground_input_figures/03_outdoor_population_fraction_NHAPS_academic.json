@@ -1,0 +1,19 @@
+{
+  "source_file": "intentra_x\\ground_risk\\data\\hohhot\\nhaps.json",
+  "source_sha256": "cc1b5597b535e562037154a804abfd128d40a72b404c5095df49d34acbe475e4",
+  "category": "9",
+  "category_mapping_reference": "intentra_x/ground_risk/demo/legacy_scripts/gen_hohhot_gif.py:49",
+  "category_mapping_verified_against_original_NHAPS_codebook": false,
+  "original_survey_provenance_verified": false,
+  "hour_count": 24,
+  "hour_range": [
+    0,
+    23
+  ],
+  "minimum_fraction": 0.01,
+  "maximum_fraction": 0.04,
+  "value_at_0900": 0.03,
+  "smoothing_or_fitted_curve": false,
+  "lines": "straight segments joining the 24 original hourly values",
+  "ground_engine_temporal_parameters_changed": false
+}

@@ -1,0 +1,1160 @@
+{
+  "data_file": "C:\\Users\\Administrator\\Desktop\\INTENTRA-X-Cognitive-Airspace-Intelligence-Risk-Aware-Autonomous-Drone-System-main\\intentra_x\\data\\UAV_gust_manual_sessions.jsonl",
+  "raw_flights": 100,
+  "usable_flights": 99,
+  "task": "first obstacle collision within (t,t+1s], using only pre-event 20-step windows",
+  "sequence_length": 20,
+  "horizon_seconds": 1.0,
+  "seed": 42,
+  "batch_size": 128,
+  "max_epochs": 80,
+  "patience": 12,
+  "learning_rate": 0.001,
+  "split": {
+    "train": [
+      "WIND_003_FLIGHT_1790154309667",
+      "WIND_003_FLIGHT_1790153445684",
+      "WIND_003_FLIGHT_1789880454191",
+      "WIND_003_FLIGHT_1789882127644",
+      "WIND_003_FLIGHT_1789881485701",
+      "WIND_003_FLIGHT_1790154493039",
+      "WIND_003_FLIGHT_1789881954240",
+      "WIND_003_FLIGHT_1789882853276",
+      "WIND_003_FLIGHT_1789880836369",
+      "WIND_003_FLIGHT_1790154445309",
+      "WIND_003_FLIGHT_1789882350439",
+      "WIND_003_FLIGHT_1790154133310",
+      "WIND_003_FLIGHT_1789881549578",
+      "WIND_003_FLIGHT_1789880409237",
+      "WIND_003_FLIGHT_1789882438456",
+      "WIND_003_FLIGHT_1789882299746",
+      "WIND_003_FLIGHT_1789880933219",
+      "WIND_003_FLIGHT_1790153829951",
+      "WIND_003_FLIGHT_1790154255651",
+      "WIND_003_FLIGHT_1789880563561",
+      "WIND_003_FLIGHT_1789882828971",
+      "WIND_003_FLIGHT_1789880981878",
+      "WIND_003_FLIGHT_1789883058193",
+      "WIND_003_FLIGHT_1789882908494",
+      "WIND_003_FLIGHT_1789881882220",
+      "WIND_003_FLIGHT_1789881782916",
+      "WIND_003_FLIGHT_1789882487044",
+      "WIND_003_FLIGHT_1789880296443",
+      "WIND_003_FLIGHT_1789883216634",
+      "WIND_003_FLIGHT_1790153481729",
+      "WIND_003_FLIGHT_1789883104583",
+      "WIND_003_FLIGHT_1789881038435",
+      "WIND_003_FLIGHT_1789883022242",
+      "WIND_003_FLIGHT_1789881176065",
+      "WIND_003_FLIGHT_1790154681143",
+      "WIND_003_FLIGHT_1789880367547",
+      "WIND_003_FLIGHT_1789882596980",
+      "WIND_003_FLIGHT_1789882409518",
+      "WIND_003_FLIGHT_1789880327063",
+      "WIND_003_FLIGHT_1789881101024",
+      "WIND_003_FLIGHT_1789880688693",
+      "WIND_003_FLIGHT_1789881519947",
+      "WIND_003_FLIGHT_1789881647738",
+      "WIND_003_FLIGHT_1789882649428",
+      "WIND_003_FLIGHT_1789882681160",
+      "WIND_003_FLIGHT_1789880895089",
+      "WIND_003_FLIGHT_1789881704464",
+      "WIND_003_FLIGHT_1789882570219",
+      "WIND_003_FLIGHT_1790154790418",
+      "WIND_003_FLIGHT_1790153917970",
+      "WIND_003_FLIGHT_1789880802258",
+      "WIND_003_FLIGHT_1789881606154",
+      "WIND_003_FLIGHT_1790153706210",
+      "WIND_003_FLIGHT_1789881134818",
+      "WIND_003_FLIGHT_1790153875015",
+      "WIND_003_FLIGHT_1790153950433",
+      "WIND_003_FLIGHT_1789882941478",
+      "WIND_003_FLIGHT_1789880491472",
+      "WIND_003_FLIGHT_1790153665040",
+      "WIND_003_FLIGHT_1790153610555",
+      "WIND_003_FLIGHT_1790154560518",
+      "WIND_003_FLIGHT_1789881924753",
+      "WIND_003_FLIGHT_1790153978371",
+      "WIND_003_FLIGHT_1790154223648",
+      "WIND_003_FLIGHT_1789880724096"
+    ],
+    "val": [
+      "WIND_003_FLIGHT_1790154660024",
+      "WIND_003_FLIGHT_1789882078529",
+      "WIND_003_FLIGHT_1789882247625",
+      "WIND_003_FLIGHT_1789881834295",
+      "WIND_003_FLIGHT_1789882378364",
+      "WIND_003_FLIGHT_1789881807357",
+      "WIND_003_FLIGHT_1790154184400",
+      "WIND_003_FLIGHT_1789883163817",
+      "WIND_003_FLIGHT_1789883000392",
+      "WIND_003_FLIGHT_1790153792935",
+      "WIND_003_FLIGHT_1790153400572",
+      "WIND_003_FLIGHT_1789882532242",
+      "WIND_003_FLIGHT_1789880754923",
+      "WIND_003_FLIGHT_1790154065156",
+      "WIND_003_FLIGHT_1790153754640"
+    ],
+    "test": [
+      "WIND_003_FLIGHT_1789882201475",
+      "WIND_003_FLIGHT_1789882778219",
+      "WIND_003_FLIGHT_1789881756133",
+      "WIND_003_FLIGHT_1789882028425",
+      "WIND_003_FLIGHT_1789880643990",
+      "WIND_003_FLIGHT_1789881672969",
+      "WIND_003_FLIGHT_1789882164701",
+      "WIND_003_FLIGHT_1790154093931",
+      "WIND_003_FLIGHT_1790154702758",
+      "WIND_003_FLIGHT_1789882879951",
+      "WIND_003_FLIGHT_1790154026173",
+      "WIND_003_FLIGHT_1789880524943",
+      "WIND_003_FLIGHT_1790154591576",
+      "WIND_003_FLIGHT_1790153580265",
+      "WIND_003_FLIGHT_1789882735702",
+      "WIND_003_FLIGHT_1790154622362",
+      "WIND_003_FLIGHT_1790154526850",
+      "WIND_003_FLIGHT_1790153557860",
+      "WIND_003_FLIGHT_1789881993236"
+    ]
+  },
+  "audit": {
+    "WIND_003_FLIGHT_1789880296443": {
+      "status": "used",
+      "rows": 150,
+      "takeoff_row": 63,
+      "first_event_row": 99,
+      "first_event_type": "obstacle",
+      "windows": 17,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789880327063": {
+      "status": "used",
+      "rows": 155,
+      "takeoff_row": 16,
+      "first_event_row": 89,
+      "first_event_type": "obstacle",
+      "windows": 54,
+      "positive_windows": 9
+    },
+    "WIND_003_FLIGHT_1789880367547": {
+      "status": "used",
+      "rows": 133,
+      "takeoff_row": 15,
+      "first_event_row": 110,
+      "first_event_type": "obstacle",
+      "windows": 76,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789880409237": {
+      "status": "used",
+      "rows": 236,
+      "takeoff_row": 17,
+      "first_event_row": 49,
+      "first_event_type": "obstacle",
+      "windows": 13,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789880454191": {
+      "status": "used",
+      "rows": 191,
+      "takeoff_row": 13,
+      "first_event_row": 111,
+      "first_event_type": "obstacle",
+      "windows": 79,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789880491472": {
+      "status": "used",
+      "rows": 168,
+      "takeoff_row": 11,
+      "first_event_row": 159,
+      "first_event_type": "ground",
+      "windows": 119,
+      "positive_windows": 0
+    },
+    "WIND_003_FLIGHT_1789880524943": {
+      "status": "used",
+      "rows": 238,
+      "takeoff_row": 15,
+      "first_event_row": 182,
+      "first_event_type": "obstacle",
+      "windows": 148,
+      "positive_windows": 9
+    },
+    "WIND_003_FLIGHT_1789880563561": {
+      "status": "used",
+      "rows": 260,
+      "takeoff_row": 12,
+      "first_event_row": 72,
+      "first_event_type": "obstacle",
+      "windows": 41,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789880643990": {
+      "status": "used",
+      "rows": 290,
+      "takeoff_row": 12,
+      "first_event_row": 59,
+      "first_event_type": "obstacle",
+      "windows": 28,
+      "positive_windows": 9
+    },
+    "WIND_003_FLIGHT_1789880688693": {
+      "status": "used",
+      "rows": 216,
+      "takeoff_row": 12,
+      "first_event_row": 105,
+      "first_event_type": "obstacle",
+      "windows": 74,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789880724096": {
+      "status": "used",
+      "rows": 189,
+      "takeoff_row": 13,
+      "first_event_row": 177,
+      "first_event_type": "ground",
+      "windows": 135,
+      "positive_windows": 0
+    },
+    "WIND_003_FLIGHT_1789880754923": {
+      "status": "used",
+      "rows": 355,
+      "takeoff_row": 15,
+      "first_event_row": 342,
+      "first_event_type": "ground",
+      "windows": 298,
+      "positive_windows": 0
+    },
+    "WIND_003_FLIGHT_1789880802258": {
+      "status": "used",
+      "rows": 238,
+      "takeoff_row": 13,
+      "first_event_row": 216,
+      "first_event_type": "ground",
+      "windows": 174,
+      "positive_windows": 0
+    },
+    "WIND_003_FLIGHT_1789880836369": {
+      "status": "used",
+      "rows": 384,
+      "takeoff_row": 13,
+      "first_event_row": 200,
+      "first_event_type": "obstacle",
+      "windows": 168,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789880895089": {
+      "status": "used",
+      "rows": 285,
+      "takeoff_row": 14,
+      "first_event_row": 192,
+      "first_event_type": "ground",
+      "windows": 149,
+      "positive_windows": 0
+    },
+    "WIND_003_FLIGHT_1789880933219": {
+      "status": "used",
+      "rows": 398,
+      "takeoff_row": 13,
+      "first_event_row": 253,
+      "first_event_type": "obstacle",
+      "windows": 221,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789880981878": {
+      "status": "used",
+      "rows": 472,
+      "takeoff_row": 20,
+      "first_event_row": 186,
+      "first_event_type": "obstacle",
+      "windows": 147,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789881038435": {
+      "status": "used",
+      "rows": 516,
+      "takeoff_row": 13,
+      "first_event_row": 178,
+      "first_event_type": "obstacle",
+      "windows": 146,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789881101024": {
+      "status": "used",
+      "rows": 253,
+      "takeoff_row": 13,
+      "first_event_row": 127,
+      "first_event_type": "obstacle",
+      "windows": 95,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789881134818": {
+      "status": "used",
+      "rows": 323,
+      "takeoff_row": 16,
+      "first_event_row": 309,
+      "first_event_type": "ground",
+      "windows": 264,
+      "positive_windows": 0
+    },
+    "WIND_003_FLIGHT_1789881176065": {
+      "status": "used",
+      "rows": 571,
+      "takeoff_row": 12,
+      "first_event_row": 457,
+      "first_event_type": "obstacle",
+      "windows": 426,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789881485701": {
+      "status": "used",
+      "rows": 158,
+      "takeoff_row": 12,
+      "first_event_row": 98,
+      "first_event_type": "obstacle",
+      "windows": 67,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789881519947": {
+      "status": "used",
+      "rows": 205,
+      "takeoff_row": 13,
+      "first_event_row": 189,
+      "first_event_type": "ground",
+      "windows": 147,
+      "positive_windows": 0
+    },
+    "WIND_003_FLIGHT_1789881549578": {
+      "status": "used",
+      "rows": 410,
+      "takeoff_row": 12,
+      "first_event_row": 185,
+      "first_event_type": "obstacle",
+      "windows": 154,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789881606154": {
+      "status": "used",
+      "rows": 315,
+      "takeoff_row": 14,
+      "first_event_row": 301,
+      "first_event_type": "ground",
+      "windows": 258,
+      "positive_windows": 0
+    },
+    "WIND_003_FLIGHT_1789881647738": {
+      "status": "used",
+      "rows": 144,
+      "takeoff_row": 12,
+      "first_event_row": 129,
+      "first_event_type": "ground",
+      "windows": 88,
+      "positive_windows": 0
+    },
+    "WIND_003_FLIGHT_1789881672969": {
+      "status": "used",
+      "rows": 229,
+      "takeoff_row": 12,
+      "first_event_row": 89,
+      "first_event_type": "obstacle",
+      "windows": 58,
+      "positive_windows": 9
+    },
+    "WIND_003_FLIGHT_1789881704464": {
+      "status": "used",
+      "rows": 450,
+      "takeoff_row": 13,
+      "first_event_row": 434,
+      "first_event_type": "ground",
+      "windows": 392,
+      "positive_windows": 0
+    },
+    "WIND_003_FLIGHT_1789881756133": {
+      "status": "used",
+      "rows": 200,
+      "takeoff_row": 11,
+      "first_event_row": 136,
+      "first_event_type": "obstacle",
+      "windows": 106,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789881782916": {
+      "status": "used",
+      "rows": 166,
+      "takeoff_row": 13,
+      "first_event_row": 137,
+      "first_event_type": "obstacle",
+      "windows": 105,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789881807357": {
+      "status": "used",
+      "rows": 143,
+      "takeoff_row": 12,
+      "first_event_row": 108,
+      "first_event_type": "obstacle",
+      "windows": 77,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789881834295": {
+      "status": "used",
+      "rows": 410,
+      "takeoff_row": 15,
+      "first_event_row": 164,
+      "first_event_type": "obstacle",
+      "windows": 130,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789881882220": {
+      "status": "used",
+      "rows": 361,
+      "takeoff_row": 25,
+      "first_event_row": 125,
+      "first_event_type": "obstacle",
+      "windows": 81,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789881924753": {
+      "status": "used",
+      "rows": 228,
+      "takeoff_row": 13,
+      "first_event_row": 216,
+      "first_event_type": "ground",
+      "windows": 174,
+      "positive_windows": 0
+    },
+    "WIND_003_FLIGHT_1789881954240": {
+      "status": "used",
+      "rows": 319,
+      "takeoff_row": 19,
+      "first_event_row": 286,
+      "first_event_type": "obstacle",
+      "windows": 248,
+      "positive_windows": 9
+    },
+    "WIND_003_FLIGHT_1789881993236": {
+      "status": "used",
+      "rows": 282,
+      "takeoff_row": 15,
+      "first_event_row": 269,
+      "first_event_type": "ground",
+      "windows": 226,
+      "positive_windows": 0
+    },
+    "WIND_003_FLIGHT_1789882028425": {
+      "status": "used",
+      "rows": 436,
+      "takeoff_row": 12,
+      "first_event_row": 126,
+      "first_event_type": "obstacle",
+      "windows": 95,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789882078529": {
+      "status": "used",
+      "rows": 418,
+      "takeoff_row": 14,
+      "first_event_row": 261,
+      "first_event_type": "obstacle",
+      "windows": 228,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789882127644": {
+      "status": "used",
+      "rows": 308,
+      "takeoff_row": 14,
+      "first_event_row": 48,
+      "first_event_type": "obstacle",
+      "windows": 15,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789882164701": {
+      "status": "used",
+      "rows": 227,
+      "takeoff_row": 18,
+      "first_event_row": 56,
+      "first_event_type": "obstacle",
+      "windows": 19,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789882187408": {
+      "status": "no_takeoff",
+      "rows": 74
+    },
+    "WIND_003_FLIGHT_1789882201475": {
+      "status": "used",
+      "rows": 371,
+      "takeoff_row": 14,
+      "first_event_row": 341,
+      "first_event_type": "obstacle",
+      "windows": 308,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789882247625": {
+      "status": "used",
+      "rows": 441,
+      "takeoff_row": 14,
+      "first_event_row": 68,
+      "first_event_type": "obstacle",
+      "windows": 35,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789882299746": {
+      "status": "used",
+      "rows": 430,
+      "takeoff_row": 14,
+      "first_event_row": 272,
+      "first_event_type": "obstacle",
+      "windows": 239,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789882350439": {
+      "status": "used",
+      "rows": 215,
+      "takeoff_row": 12,
+      "first_event_row": 159,
+      "first_event_type": "obstacle",
+      "windows": 128,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789882378364": {
+      "status": "used",
+      "rows": 244,
+      "takeoff_row": 12,
+      "first_event_row": 146,
+      "first_event_type": "obstacle",
+      "windows": 115,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789882409518": {
+      "status": "used",
+      "rows": 217,
+      "takeoff_row": 12,
+      "first_event_row": 112,
+      "first_event_type": "obstacle",
+      "windows": 81,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789882438456": {
+      "status": "used",
+      "rows": 432,
+      "takeoff_row": 12,
+      "first_event_row": 42,
+      "first_event_type": "obstacle",
+      "windows": 11,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789882487044": {
+      "status": "used",
+      "rows": 389,
+      "takeoff_row": 13,
+      "first_event_row": 247,
+      "first_event_type": "obstacle",
+      "windows": 215,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789882532242": {
+      "status": "used",
+      "rows": 316,
+      "takeoff_row": 22,
+      "first_event_row": 301,
+      "first_event_type": "ground",
+      "windows": 250,
+      "positive_windows": 0
+    },
+    "WIND_003_FLIGHT_1789882570219": {
+      "status": "used",
+      "rows": 206,
+      "takeoff_row": 15,
+      "first_event_row": 191,
+      "first_event_type": "ground",
+      "windows": 148,
+      "positive_windows": 0
+    },
+    "WIND_003_FLIGHT_1789882596980": {
+      "status": "used",
+      "rows": 442,
+      "takeoff_row": 14,
+      "first_event_row": 362,
+      "first_event_type": "obstacle",
+      "windows": 329,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789882649428": {
+      "status": "used",
+      "rows": 236,
+      "takeoff_row": 13,
+      "first_event_row": 214,
+      "first_event_type": "ground",
+      "windows": 172,
+      "positive_windows": 0
+    },
+    "WIND_003_FLIGHT_1789882681160": {
+      "status": "used",
+      "rows": 455,
+      "takeoff_row": 18,
+      "first_event_row": 443,
+      "first_event_type": "ground",
+      "windows": 396,
+      "positive_windows": 0
+    },
+    "WIND_003_FLIGHT_1789882735702": {
+      "status": "used",
+      "rows": 356,
+      "takeoff_row": 16,
+      "first_event_row": 345,
+      "first_event_type": "ground",
+      "windows": 300,
+      "positive_windows": 0
+    },
+    "WIND_003_FLIGHT_1789882778219": {
+      "status": "used",
+      "rows": 446,
+      "takeoff_row": 21,
+      "first_event_row": 283,
+      "first_event_type": "obstacle",
+      "windows": 243,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789882828971": {
+      "status": "used",
+      "rows": 176,
+      "takeoff_row": 20,
+      "first_event_row": 92,
+      "first_event_type": "obstacle",
+      "windows": 53,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789882853276": {
+      "status": "used",
+      "rows": 205,
+      "takeoff_row": 19,
+      "first_event_row": 141,
+      "first_event_type": "obstacle",
+      "windows": 103,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789882879951": {
+      "status": "used",
+      "rows": 233,
+      "takeoff_row": 15,
+      "first_event_row": 139,
+      "first_event_type": "obstacle",
+      "windows": 105,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789882908494": {
+      "status": "used",
+      "rows": 251,
+      "takeoff_row": 16,
+      "first_event_row": 182,
+      "first_event_type": "obstacle",
+      "windows": 147,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789882941478": {
+      "status": "used",
+      "rows": 526,
+      "takeoff_row": 14,
+      "first_event_row": 510,
+      "first_event_type": "ground",
+      "windows": 467,
+      "positive_windows": 0
+    },
+    "WIND_003_FLIGHT_1789883000392": {
+      "status": "used",
+      "rows": 155,
+      "takeoff_row": 15,
+      "first_event_row": 112,
+      "first_event_type": "obstacle",
+      "windows": 78,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789883022242": {
+      "status": "used",
+      "rows": 302,
+      "takeoff_row": 13,
+      "first_event_row": 125,
+      "first_event_type": "obstacle",
+      "windows": 93,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789883058193": {
+      "status": "used",
+      "rows": 401,
+      "takeoff_row": 33,
+      "first_event_row": 139,
+      "first_event_type": "obstacle",
+      "windows": 87,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789883104583": {
+      "status": "used",
+      "rows": 512,
+      "takeoff_row": 17,
+      "first_event_row": 442,
+      "first_event_type": "obstacle",
+      "windows": 406,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789883163817": {
+      "status": "used",
+      "rows": 412,
+      "takeoff_row": 15,
+      "first_event_row": 104,
+      "first_event_type": "obstacle",
+      "windows": 70,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1789883216634": {
+      "status": "used",
+      "rows": 899,
+      "takeoff_row": 41,
+      "first_event_row": 220,
+      "first_event_type": "obstacle",
+      "windows": 160,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1790153400572": {
+      "status": "used",
+      "rows": 216,
+      "takeoff_row": 40,
+      "first_event_row": 199,
+      "first_event_type": "ground",
+      "windows": 130,
+      "positive_windows": 0
+    },
+    "WIND_003_FLIGHT_1790153445684": {
+      "status": "used",
+      "rows": 248,
+      "takeoff_row": 10,
+      "first_event_row": 128,
+      "first_event_type": "obstacle",
+      "windows": 99,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1790153481729": {
+      "status": "used",
+      "rows": 653,
+      "takeoff_row": 21,
+      "first_event_row": 334,
+      "first_event_type": "obstacle",
+      "windows": 294,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1790153557860": {
+      "status": "used",
+      "rows": 143,
+      "takeoff_row": 16,
+      "first_event_row": 133,
+      "first_event_type": "ground",
+      "windows": 88,
+      "positive_windows": 0
+    },
+    "WIND_003_FLIGHT_1790153580265": {
+      "status": "used",
+      "rows": 197,
+      "takeoff_row": 16,
+      "first_event_row": 181,
+      "first_event_type": "ground",
+      "windows": 136,
+      "positive_windows": 0
+    },
+    "WIND_003_FLIGHT_1790153610555": {
+      "status": "used",
+      "rows": 422,
+      "takeoff_row": 25,
+      "first_event_row": 407,
+      "first_event_type": "ground",
+      "windows": 354,
+      "positive_windows": 0
+    },
+    "WIND_003_FLIGHT_1790153665040": {
+      "status": "used",
+      "rows": 295,
+      "takeoff_row": 20,
+      "first_event_row": 284,
+      "first_event_type": "ground",
+      "windows": 235,
+      "positive_windows": 0
+    },
+    "WIND_003_FLIGHT_1790153706210": {
+      "status": "used",
+      "rows": 401,
+      "takeoff_row": 14,
+      "first_event_row": 386,
+      "first_event_type": "ground",
+      "windows": 343,
+      "positive_windows": 0
+    },
+    "WIND_003_FLIGHT_1790153754640": {
+      "status": "used",
+      "rows": 282,
+      "takeoff_row": 13,
+      "first_event_row": 278,
+      "first_event_type": "ground",
+      "windows": 236,
+      "positive_windows": 0
+    },
+    "WIND_003_FLIGHT_1790153792935": {
+      "status": "used",
+      "rows": 276,
+      "takeoff_row": 12,
+      "first_event_row": 268,
+      "first_event_type": "ground",
+      "windows": 227,
+      "positive_windows": 0
+    },
+    "WIND_003_FLIGHT_1790153829951": {
+      "status": "used",
+      "rows": 363,
+      "takeoff_row": 20,
+      "first_event_row": 128,
+      "first_event_type": "obstacle",
+      "windows": 89,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1790153875015": {
+      "status": "used",
+      "rows": 319,
+      "takeoff_row": 11,
+      "first_event_row": 305,
+      "first_event_type": "ground",
+      "windows": 265,
+      "positive_windows": 0
+    },
+    "WIND_003_FLIGHT_1790153917970": {
+      "status": "used",
+      "rows": 258,
+      "takeoff_row": 17,
+      "first_event_row": 245,
+      "first_event_type": "ground",
+      "windows": 199,
+      "positive_windows": 0
+    },
+    "WIND_003_FLIGHT_1790153950433": {
+      "status": "used",
+      "rows": 211,
+      "takeoff_row": 20,
+      "first_event_row": 201,
+      "first_event_type": "ground",
+      "windows": 153,
+      "positive_windows": 0
+    },
+    "WIND_003_FLIGHT_1790153978371": {
+      "status": "used",
+      "rows": 400,
+      "takeoff_row": 17,
+      "first_event_row": 395,
+      "first_event_type": "ground",
+      "windows": 349,
+      "positive_windows": 0
+    },
+    "WIND_003_FLIGHT_1790154026173": {
+      "status": "used",
+      "rows": 307,
+      "takeoff_row": 13,
+      "first_event_row": 91,
+      "first_event_type": "obstacle",
+      "windows": 59,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1790154065156": {
+      "status": "used",
+      "rows": 209,
+      "takeoff_row": 15,
+      "first_event_row": 195,
+      "first_event_type": "ground",
+      "windows": 152,
+      "positive_windows": 0
+    },
+    "WIND_003_FLIGHT_1790154093931": {
+      "status": "used",
+      "rows": 244,
+      "takeoff_row": 15,
+      "first_event_row": 204,
+      "first_event_type": "obstacle",
+      "windows": 170,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1790154133310": {
+      "status": "used",
+      "rows": 338,
+      "takeoff_row": 15,
+      "first_event_row": 106,
+      "first_event_type": "obstacle",
+      "windows": 72,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1790154184400": {
+      "status": "used",
+      "rows": 313,
+      "takeoff_row": 14,
+      "first_event_row": 281,
+      "first_event_type": "obstacle",
+      "windows": 248,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1790154223648": {
+      "status": "used",
+      "rows": 224,
+      "takeoff_row": 23,
+      "first_event_row": 212,
+      "first_event_type": "ground",
+      "windows": 160,
+      "positive_windows": 0
+    },
+    "WIND_003_FLIGHT_1790154255651": {
+      "status": "used",
+      "rows": 424,
+      "takeoff_row": 16,
+      "first_event_row": 368,
+      "first_event_type": "obstacle",
+      "windows": 333,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1790154309667": {
+      "status": "used",
+      "rows": 347,
+      "takeoff_row": 12,
+      "first_event_row": 327,
+      "first_event_type": "obstacle",
+      "windows": 296,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1790154445309": {
+      "status": "used",
+      "rows": 375,
+      "takeoff_row": 15,
+      "first_event_row": 223,
+      "first_event_type": "obstacle",
+      "windows": 189,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1790154493039": {
+      "status": "used",
+      "rows": 286,
+      "takeoff_row": 13,
+      "first_event_row": 184,
+      "first_event_type": "obstacle",
+      "windows": 152,
+      "positive_windows": 9
+    },
+    "WIND_003_FLIGHT_1790154526850": {
+      "status": "used",
+      "rows": 279,
+      "takeoff_row": 17,
+      "first_event_row": 271,
+      "first_event_type": "ground",
+      "windows": 226,
+      "positive_windows": 0
+    },
+    "WIND_003_FLIGHT_1790154560518": {
+      "status": "used",
+      "rows": 243,
+      "takeoff_row": 13,
+      "first_event_row": 231,
+      "first_event_type": "ground",
+      "windows": 190,
+      "positive_windows": 0
+    },
+    "WIND_003_FLIGHT_1790154591576": {
+      "status": "used",
+      "rows": 266,
+      "takeoff_row": 13,
+      "first_event_row": 262,
+      "first_event_type": "ground",
+      "windows": 220,
+      "positive_windows": 0
+    },
+    "WIND_003_FLIGHT_1790154622362": {
+      "status": "used",
+      "rows": 251,
+      "takeoff_row": 13,
+      "first_event_row": 238,
+      "first_event_type": "ground",
+      "windows": 197,
+      "positive_windows": 0
+    },
+    "WIND_003_FLIGHT_1790154660024": {
+      "status": "used",
+      "rows": 170,
+      "takeoff_row": 14,
+      "first_event_row": 115,
+      "first_event_type": "obstacle",
+      "windows": 82,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1790154681143": {
+      "status": "used",
+      "rows": 166,
+      "takeoff_row": 15,
+      "first_event_row": 126,
+      "first_event_type": "obstacle",
+      "windows": 92,
+      "positive_windows": 10
+    },
+    "WIND_003_FLIGHT_1790154702758": {
+      "status": "used",
+      "rows": 92,
+      "takeoff_row": 15,
+      "first_event_row": 58,
+      "first_event_type": "obstacle",
+      "windows": 24,
+      "positive_windows": 9
+    },
+    "WIND_003_FLIGHT_1790154790418": {
+      "status": "used",
+      "rows": 288,
+      "takeoff_row": 22,
+      "first_event_row": 270,
+      "first_event_type": "ground",
+      "windows": 219,
+      "positive_windows": 0
+    }
+  },
+  "results": [
+    {
+      "schema": "x9",
+      "features": [
+        "wind_speed",
+        "drone_speed",
+        "roll",
+        "pitch",
+        "altitude",
+        "sensor_obstacle_distance",
+        "obstacle_detected",
+        "wind_direction_sin",
+        "wind_direction_cos"
+      ],
+      "best_epoch": 5,
+      "best_val_pr_auc": 0.34088310635129804,
+      "val": {
+        "windows": 2356,
+        "positive_windows": 90,
+        "threshold": 0.12,
+        "precision": 0.4722222222222222,
+        "recall": 0.37777777777777777,
+        "f1": 0.4197530864197531,
+        "roc_auc": 0.8016769638128859,
+        "pr_auc": 0.34088310635129804,
+        "tp": 34,
+        "fp": 38,
+        "tn": 2228,
+        "fn": 56
+      },
+      "test": {
+        "windows": 2756,
+        "positive_windows": 116,
+        "threshold": 0.12,
+        "precision": 0.29292929292929293,
+        "recall": 0.25,
+        "f1": 0.26976744186046514,
+        "roc_auc": 0.7056638584117032,
+        "pr_auc": 0.1785851411374055,
+        "tp": 29,
+        "fp": 70,
+        "tn": 2570,
+        "fn": 87
+      },
+      "normalization_mean": [
+        4.740782737731934,
+        11.072416305541992,
+        4.015500068664551,
+        -10.587892532348633,
+        14.818456649780273,
+        43.67071533203125,
+        0.9996504783630371,
+        -0.0188794806599617,
+        -0.0321783684194088
+      ],
+      "normalization_std": [
+        3.103442430496216,
+        4.395943641662598,
+        20.1278133392334,
+        13.827960968017578,
+        11.534509658813477,
+        32.97441864013672,
+        0.01869082637131214,
+        0.6903173923492432,
+        0.7224912047386169
+      ]
+    },
+    {
+      "schema": "x12",
+      "features": [
+        "altitude",
+        "velocity_x",
+        "velocity_y",
+        "velocity_z",
+        "drone_speed",
+        "roll",
+        "pitch",
+        "wind_speed",
+        "wind_direction_sin",
+        "wind_direction_cos",
+        "sensor_obstacle_distance",
+        "obstacle_detected"
+      ],
+      "best_epoch": 5,
+      "best_val_pr_auc": 0.35854998287984674,
+      "val": {
+        "windows": 2356,
+        "positive_windows": 90,
+        "threshold": 0.08,
+        "precision": 0.2755905511811024,
+        "recall": 0.3888888888888889,
+        "f1": 0.3225806451612903,
+        "roc_auc": 0.8275522212415416,
+        "pr_auc": 0.35854998287984674,
+        "tp": 35,
+        "fp": 92,
+        "tn": 2174,
+        "fn": 55
+      },
+      "test": {
+        "windows": 2756,
+        "positive_windows": 116,
+        "threshold": 0.08,
+        "precision": 0.1308016877637131,
+        "recall": 0.2672413793103448,
+        "f1": 0.1756373937677054,
+        "roc_auc": 0.7023217084639498,
+        "pr_auc": 0.14737276305205038,
+        "tp": 31,
+        "fp": 206,
+        "tn": 2434,
+        "fn": 85
+      },
+      "normalization_mean": [
+        14.818456649780273,
+        2.6509618759155273,
+        -1.0201725959777832,
+        -0.4259704351425171,
+        11.072416305541992,
+        4.015500068664551,
+        -10.587892532348633,
+        4.740782737731934,
+        -0.0188794806599617,
+        -0.0321783684194088,
+        43.67071533203125,
+        0.9996504783630371
+      ],
+      "normalization_std": [
+        11.534509658813477,
+        8.426542282104492,
+        7.367309093475342,
+        2.8993215560913086,
+        4.395943641662598,
+        20.1278133392334,
+        13.827960968017578,
+        3.103442430496216,
+        0.6903173923492432,
+        0.7224912047386169,
+        32.97441864013672,
+        0.01869082637131214
+      ]
+    }
+  ]
+}

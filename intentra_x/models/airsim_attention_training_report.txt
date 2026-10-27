@@ -1,0 +1,173 @@
+========================================================================
+RUN CONFIGURATION (超参配置清单)
+========================================================================
+[数据参数]
+  data_path                = C:\Users\Administrator\Desktop\INTENTRA-X-Cognitive-Airspace-Intelligence-Risk-Aware-Autonomous-Drone-System-main\intentra_x\data\UAV_gust_all.jsonl
+  sequence_length (SEQ_LEN)= 20
+  horizon_seconds          = 1.0
+  n_features               = 9
+  feature_names            = ['wind_speed', 'drone_speed', 'roll', 'pitch', 'altitude', 'sensor_obstacle_distance', 'obstacle_detected', 'wind_direction_sin', 'wind_direction_cos']
+[训练超参]
+  batch_size               = 64
+  max_epochs               = 120
+  learning_rate            = 0.001
+  early_stop_patience      = 15
+  early_stop_metric        = val_pr_auc (fallback: val_f1)
+  class_weights_to_try     = [1.0, 1.5, 2.0, 2.32]
+  optimizer                = Adam
+  loss                     = weighted BCE (positive class up-weighted)
+  threshold_selection      = search 0.05~0.95 by F1 on val set
+  rng_seed                 = 42
+  device                   = cpu
+[模型结构] FeatureAttentionRiskLSTM
+  attention_type           = per-feature sigmoid gate (bottleneck MLP)
+  lstm_hidden_size         = 64
+  lstm_num_layers          = 2
+  lstm_dropout             = 0.2
+  regression_head          = Linear(hidden,32)->ReLU->Dropout(0.3)->Linear(32,1)->Sigmoid
+  normalization            = per-feature z-score (mean/std from train set)
+========================================================================
+
+Device: cpu
+Data: C:\Users\Administrator\Desktop\INTENTRA-X-Cognitive-Airspace-Intelligence-Risk-Aware-Autonomous-Drone-System-main\intentra_x\data\UAV_gust_all.jsonl
+Flights: 5
+Samples: 6898 | positive risk windows: 1955 (28.34%)
+Sequence length: 20 | horizon: 1.0s
+Train flights: ['WIND_003_FLIGHT_1780585162213', 'WIND_003_FLIGHT_1780585279146', 'WIND_003_FLIGHT_1780585430749']
+Val flights: ['WIND_003_FLIGHT_1780584946007']
+Test flights: ['WIND_003_FLIGHT_1780584775880']
+Train/Val/Test: 3503/1911/1484
+Train positive rate: 30.12%
+
+Class weights to compare: [1.0, 1.5, 2.0, 2.32]
+Early stopping metric: val_pr_auc (fallback: val_f1)
+
+========================================================================
+Training model with positive class_weight=1.0
+========================================================================
+Epoch 001 | train_loss=0.6170 | val_loss=0.5522 | val_threshold=0.27 | val_precision=0.433 | val_recall=0.657 | val_f1=0.522 | val_pr_auc=0.47913250092203447
+Epoch 002 | train_loss=0.5542 | val_loss=0.5387 | val_threshold=0.21 | val_precision=0.428 | val_recall=0.768 | val_f1=0.550 | val_pr_auc=0.5261655133658547
+Epoch 003 | train_loss=0.5167 | val_loss=0.5540 | val_threshold=0.32 | val_precision=0.562 | val_recall=0.641 | val_f1=0.599 | val_pr_auc=0.581422157179686
+Epoch 004 | train_loss=0.4721 | val_loss=0.5623 | val_threshold=0.44 | val_precision=0.644 | val_recall=0.593 | val_f1=0.617 | val_pr_auc=0.6109565502832961
+Epoch 005 | train_loss=0.4381 | val_loss=0.5783 | val_threshold=0.31 | val_precision=0.653 | val_recall=0.586 | val_f1=0.617 | val_pr_auc=0.6669825684874489
+Epoch 006 | train_loss=0.4050 | val_loss=0.6053 | val_threshold=0.21 | val_precision=0.539 | val_recall=0.643 | val_f1=0.586 | val_pr_auc=0.6036246069413315
+Epoch 007 | train_loss=0.3677 | val_loss=0.6856 | val_threshold=0.16 | val_precision=0.554 | val_recall=0.619 | val_f1=0.584 | val_pr_auc=0.5860405940134965
+Epoch 008 | train_loss=0.3473 | val_loss=0.6894 | val_threshold=0.18 | val_precision=0.532 | val_recall=0.678 | val_f1=0.596 | val_pr_auc=0.6171509752919392
+Epoch 009 | train_loss=0.3161 | val_loss=0.7827 | val_threshold=0.15 | val_precision=0.486 | val_recall=0.694 | val_f1=0.572 | val_pr_auc=0.5637983699774003
+Epoch 010 | train_loss=0.2944 | val_loss=0.8412 | val_threshold=0.15 | val_precision=0.503 | val_recall=0.663 | val_f1=0.572 | val_pr_auc=0.5687724564955704
+Epoch 011 | train_loss=0.2631 | val_loss=0.8701 | val_threshold=0.33 | val_precision=0.610 | val_recall=0.521 | val_f1=0.562 | val_pr_auc=0.5735236264250964
+Epoch 012 | train_loss=0.2524 | val_loss=0.8840 | val_threshold=0.21 | val_precision=0.569 | val_recall=0.569 | val_f1=0.569 | val_pr_auc=0.5835911803206832
+Epoch 013 | train_loss=0.2229 | val_loss=0.9704 | val_threshold=0.07 | val_precision=0.478 | val_recall=0.674 | val_f1=0.559 | val_pr_auc=0.5627216973204997
+Epoch 014 | train_loss=0.2160 | val_loss=0.9809 | val_threshold=0.06 | val_precision=0.484 | val_recall=0.669 | val_f1=0.561 | val_pr_auc=0.5730533615420386
+Epoch 015 | train_loss=0.2092 | val_loss=1.0081 | val_threshold=0.05 | val_precision=0.492 | val_recall=0.700 | val_f1=0.578 | val_pr_auc=0.5727582563285032
+Epoch 016 | train_loss=0.1924 | val_loss=1.0169 | val_threshold=0.11 | val_precision=0.483 | val_recall=0.637 | val_f1=0.549 | val_pr_auc=0.5380582023856084
+Epoch 017 | train_loss=0.1792 | val_loss=1.1165 | val_threshold=0.05 | val_precision=0.479 | val_recall=0.600 | val_f1=0.533 | val_pr_auc=0.5387612329292999
+Epoch 018 | train_loss=0.1713 | val_loss=1.1399 | val_threshold=0.05 | val_precision=0.450 | val_recall=0.619 | val_f1=0.521 | val_pr_auc=0.5394683809849253
+Epoch 019 | train_loss=0.1531 | val_loss=1.1745 | val_threshold=0.05 | val_precision=0.506 | val_recall=0.575 | val_f1=0.538 | val_pr_auc=0.5549180452178208
+Epoch 020 | train_loss=0.1359 | val_loss=1.2761 | val_threshold=0.05 | val_precision=0.472 | val_recall=0.586 | val_f1=0.523 | val_pr_auc=0.515737570135473
+Early stopping at epoch 20; best_val_pr_auc=0.6670, best_threshold=0.31
+Finished class_weight=1.0: best_val_pr_auc=0.6670, best_threshold=0.31
+
+========================================================================
+Training model with positive class_weight=1.5
+========================================================================
+Epoch 001 | train_loss=0.7555 | val_loss=0.7026 | val_threshold=0.32 | val_precision=0.397 | val_recall=0.750 | val_f1=0.519 | val_pr_auc=0.48763831206543506
+Epoch 002 | train_loss=0.6737 | val_loss=0.7050 | val_threshold=0.50 | val_precision=0.573 | val_recall=0.591 | val_f1=0.582 | val_pr_auc=0.5759258582096214
+Epoch 003 | train_loss=0.6152 | val_loss=0.7800 | val_threshold=0.46 | val_precision=0.610 | val_recall=0.556 | val_f1=0.582 | val_pr_auc=0.5851781079262355
+Epoch 004 | train_loss=0.5761 | val_loss=0.8559 | val_threshold=0.52 | val_precision=0.607 | val_recall=0.604 | val_f1=0.606 | val_pr_auc=0.6254402447875331
+Epoch 005 | train_loss=0.5388 | val_loss=0.8360 | val_threshold=0.40 | val_precision=0.571 | val_recall=0.560 | val_f1=0.566 | val_pr_auc=0.6248272894113283
+Epoch 006 | train_loss=0.5192 | val_loss=0.6901 | val_threshold=0.31 | val_precision=0.531 | val_recall=0.641 | val_f1=0.581 | val_pr_auc=0.6025783875920152
+Epoch 007 | train_loss=0.4772 | val_loss=0.8978 | val_threshold=0.36 | val_precision=0.594 | val_recall=0.551 | val_f1=0.572 | val_pr_auc=0.5980579792592454
+Epoch 008 | train_loss=0.4445 | val_loss=0.9298 | val_threshold=0.35 | val_precision=0.552 | val_recall=0.622 | val_f1=0.585 | val_pr_auc=0.6052814213292976
+Epoch 009 | train_loss=0.4179 | val_loss=0.9969 | val_threshold=0.28 | val_precision=0.527 | val_recall=0.681 | val_f1=0.594 | val_pr_auc=0.6072726960764068
+Epoch 010 | train_loss=0.3863 | val_loss=1.0924 | val_threshold=0.25 | val_precision=0.504 | val_recall=0.643 | val_f1=0.565 | val_pr_auc=0.5668902998181954
+Epoch 011 | train_loss=0.3511 | val_loss=1.0247 | val_threshold=0.32 | val_precision=0.513 | val_recall=0.628 | val_f1=0.565 | val_pr_auc=0.5716785689322497
+Epoch 012 | train_loss=0.3447 | val_loss=1.1379 | val_threshold=0.33 | val_precision=0.574 | val_recall=0.582 | val_f1=0.578 | val_pr_auc=0.5993493220020565
+Epoch 013 | train_loss=0.2958 | val_loss=1.3454 | val_threshold=0.29 | val_precision=0.516 | val_recall=0.635 | val_f1=0.569 | val_pr_auc=0.5501742484111445
+Epoch 014 | train_loss=0.2811 | val_loss=1.3570 | val_threshold=0.24 | val_precision=0.518 | val_recall=0.632 | val_f1=0.569 | val_pr_auc=0.5793851418317758
+Epoch 015 | train_loss=0.2603 | val_loss=1.4090 | val_threshold=0.16 | val_precision=0.507 | val_recall=0.659 | val_f1=0.573 | val_pr_auc=0.5855326132015031
+Epoch 016 | train_loss=0.2420 | val_loss=1.3860 | val_threshold=0.50 | val_precision=0.589 | val_recall=0.580 | val_f1=0.584 | val_pr_auc=0.5568015911717057
+Epoch 017 | train_loss=0.2189 | val_loss=1.5329 | val_threshold=0.07 | val_precision=0.445 | val_recall=0.727 | val_f1=0.552 | val_pr_auc=0.5285547032777445
+Epoch 018 | train_loss=0.2143 | val_loss=1.4820 | val_threshold=0.34 | val_precision=0.556 | val_recall=0.600 | val_f1=0.578 | val_pr_auc=0.5698411649057531
+Epoch 019 | train_loss=0.1878 | val_loss=1.5854 | val_threshold=0.11 | val_precision=0.530 | val_recall=0.648 | val_f1=0.583 | val_pr_auc=0.5654559467223749
+Early stopping at epoch 19; best_val_pr_auc=0.6254, best_threshold=0.52
+Finished class_weight=1.5: best_val_pr_auc=0.6254, best_threshold=0.52
+
+========================================================================
+Training model with positive class_weight=2.0
+========================================================================
+Epoch 001 | train_loss=0.8750 | val_loss=0.8006 | val_threshold=0.40 | val_precision=0.428 | val_recall=0.757 | val_f1=0.547 | val_pr_auc=0.5418419256632558
+Epoch 002 | train_loss=0.7713 | val_loss=0.8476 | val_threshold=0.54 | val_precision=0.583 | val_recall=0.591 | val_f1=0.587 | val_pr_auc=0.5772786205205187
+Epoch 003 | train_loss=0.6993 | val_loss=0.9558 | val_threshold=0.45 | val_precision=0.508 | val_recall=0.621 | val_f1=0.558 | val_pr_auc=0.5713467399324411
+Epoch 004 | train_loss=0.6732 | val_loss=0.8532 | val_threshold=0.44 | val_precision=0.565 | val_recall=0.656 | val_f1=0.607 | val_pr_auc=0.6237748359391451
+Epoch 005 | train_loss=0.6292 | val_loss=0.9498 | val_threshold=0.50 | val_precision=0.561 | val_recall=0.589 | val_f1=0.575 | val_pr_auc=0.6180327511409476
+Epoch 006 | train_loss=0.6093 | val_loss=0.8341 | val_threshold=0.45 | val_precision=0.601 | val_recall=0.604 | val_f1=0.602 | val_pr_auc=0.6048347587537898
+Epoch 007 | train_loss=0.5763 | val_loss=1.0027 | val_threshold=0.43 | val_precision=0.601 | val_recall=0.569 | val_f1=0.585 | val_pr_auc=0.6131630461230567
+Epoch 008 | train_loss=0.5310 | val_loss=0.9550 | val_threshold=0.42 | val_precision=0.576 | val_recall=0.610 | val_f1=0.592 | val_pr_auc=0.6196066728263472
+Epoch 009 | train_loss=0.4955 | val_loss=1.1643 | val_threshold=0.47 | val_precision=0.600 | val_recall=0.593 | val_f1=0.596 | val_pr_auc=0.5914518267049838
+Epoch 010 | train_loss=0.4639 | val_loss=1.3275 | val_threshold=0.26 | val_precision=0.496 | val_recall=0.639 | val_f1=0.559 | val_pr_auc=0.5644116624335869
+Epoch 011 | train_loss=0.4424 | val_loss=1.3126 | val_threshold=0.49 | val_precision=0.613 | val_recall=0.589 | val_f1=0.601 | val_pr_auc=0.6223861405830174
+Epoch 012 | train_loss=0.3930 | val_loss=1.4980 | val_threshold=0.57 | val_precision=0.606 | val_recall=0.573 | val_f1=0.589 | val_pr_auc=0.6095467694790926
+Epoch 013 | train_loss=0.3410 | val_loss=1.6330 | val_threshold=0.42 | val_precision=0.556 | val_recall=0.595 | val_f1=0.575 | val_pr_auc=0.5942546156829479
+Epoch 014 | train_loss=0.3054 | val_loss=1.7403 | val_threshold=0.28 | val_precision=0.534 | val_recall=0.628 | val_f1=0.577 | val_pr_auc=0.5878899693385454
+Epoch 015 | train_loss=0.2889 | val_loss=1.8468 | val_threshold=0.17 | val_precision=0.507 | val_recall=0.599 | val_f1=0.549 | val_pr_auc=0.569570837756271
+Epoch 016 | train_loss=0.2723 | val_loss=1.8601 | val_threshold=0.18 | val_precision=0.537 | val_recall=0.604 | val_f1=0.568 | val_pr_auc=0.5360098701725854
+Epoch 017 | train_loss=0.2417 | val_loss=2.0529 | val_threshold=0.23 | val_precision=0.547 | val_recall=0.584 | val_f1=0.565 | val_pr_auc=0.5617604992206274
+Epoch 018 | train_loss=0.2248 | val_loss=2.3246 | val_threshold=0.07 | val_precision=0.452 | val_recall=0.622 | val_f1=0.524 | val_pr_auc=0.5353412162905274
+Epoch 019 | train_loss=0.2016 | val_loss=2.2164 | val_threshold=0.09 | val_precision=0.518 | val_recall=0.600 | val_f1=0.556 | val_pr_auc=0.5566556561933007
+Early stopping at epoch 19; best_val_pr_auc=0.6238, best_threshold=0.44
+Finished class_weight=2.0: best_val_pr_auc=0.6238, best_threshold=0.44
+
+========================================================================
+Training model with positive class_weight=2.32
+========================================================================
+Epoch 001 | train_loss=0.9433 | val_loss=0.8669 | val_threshold=0.40 | val_precision=0.433 | val_recall=0.757 | val_f1=0.551 | val_pr_auc=0.5321813919176503
+Epoch 002 | train_loss=0.8360 | val_loss=0.8890 | val_threshold=0.56 | val_precision=0.562 | val_recall=0.621 | val_f1=0.590 | val_pr_auc=0.5869355706719778
+Epoch 003 | train_loss=0.7576 | val_loss=1.0926 | val_threshold=0.46 | val_precision=0.558 | val_recall=0.628 | val_f1=0.591 | val_pr_auc=0.5920533882371626
+Epoch 004 | train_loss=0.7167 | val_loss=0.9694 | val_threshold=0.62 | val_precision=0.640 | val_recall=0.600 | val_f1=0.620 | val_pr_auc=0.6447454362717964
+Epoch 005 | train_loss=0.6707 | val_loss=1.1499 | val_threshold=0.54 | val_precision=0.577 | val_recall=0.597 | val_f1=0.586 | val_pr_auc=0.6324119725973023
+Epoch 006 | train_loss=0.6407 | val_loss=1.0446 | val_threshold=0.43 | val_precision=0.581 | val_recall=0.608 | val_f1=0.594 | val_pr_auc=0.6103955238679901
+Epoch 007 | train_loss=0.6033 | val_loss=1.1122 | val_threshold=0.50 | val_precision=0.611 | val_recall=0.595 | val_f1=0.603 | val_pr_auc=0.6230468774736435
+Epoch 008 | train_loss=0.5588 | val_loss=1.2531 | val_threshold=0.49 | val_precision=0.617 | val_recall=0.599 | val_f1=0.607 | val_pr_auc=0.6222603785463886
+Epoch 009 | train_loss=0.5112 | val_loss=1.4446 | val_threshold=0.56 | val_precision=0.615 | val_recall=0.586 | val_f1=0.600 | val_pr_auc=0.5840094579541868
+Epoch 010 | train_loss=0.4789 | val_loss=1.5409 | val_threshold=0.48 | val_precision=0.608 | val_recall=0.529 | val_f1=0.566 | val_pr_auc=0.5920595720171213
+Epoch 011 | train_loss=0.4555 | val_loss=1.4487 | val_threshold=0.66 | val_precision=0.657 | val_recall=0.578 | val_f1=0.615 | val_pr_auc=0.6240525076867649
+Epoch 012 | train_loss=0.4071 | val_loss=1.6774 | val_threshold=0.66 | val_precision=0.651 | val_recall=0.519 | val_f1=0.578 | val_pr_auc=0.6130575118084503
+Epoch 013 | train_loss=0.3449 | val_loss=1.8689 | val_threshold=0.57 | val_precision=0.590 | val_recall=0.554 | val_f1=0.572 | val_pr_auc=0.6019011831544359
+Epoch 014 | train_loss=0.3164 | val_loss=1.9249 | val_threshold=0.24 | val_precision=0.561 | val_recall=0.602 | val_f1=0.581 | val_pr_auc=0.596763278555066
+Epoch 015 | train_loss=0.2961 | val_loss=2.0995 | val_threshold=0.69 | val_precision=0.634 | val_recall=0.517 | val_f1=0.570 | val_pr_auc=0.5996091039983806
+Epoch 016 | train_loss=0.2471 | val_loss=1.9191 | val_threshold=0.58 | val_precision=0.598 | val_recall=0.558 | val_f1=0.577 | val_pr_auc=0.5958270357031852
+Epoch 017 | train_loss=0.2469 | val_loss=2.5034 | val_threshold=0.09 | val_precision=0.534 | val_recall=0.626 | val_f1=0.576 | val_pr_auc=0.5731388398430095
+Epoch 018 | train_loss=0.2575 | val_loss=2.2651 | val_threshold=0.61 | val_precision=0.557 | val_recall=0.547 | val_f1=0.552 | val_pr_auc=0.5847244653916959
+Epoch 019 | train_loss=0.1915 | val_loss=2.5663 | val_threshold=0.10 | val_precision=0.486 | val_recall=0.624 | val_f1=0.546 | val_pr_auc=0.5719595715941567
+Early stopping at epoch 19; best_val_pr_auc=0.6447, best_threshold=0.62
+Finished class_weight=2.32: best_val_pr_auc=0.6447, best_threshold=0.62
+
+Class weight comparison summary:
+  class_weight=1.00 | best_val_pr_auc=0.6670 | best_threshold=0.31
+  class_weight=1.50 | best_val_pr_auc=0.6254 | best_threshold=0.52
+  class_weight=2.00 | best_val_pr_auc=0.6238 | best_threshold=0.44
+  class_weight=2.32 | best_val_pr_auc=0.6447 | best_threshold=0.62
+Selected class_weight=1.00, threshold=0.31
+
+Test weighted BCE=0.5455 | Test accuracy@0.5=0.800
+Test predicted risk mean=0.1723 | label mean=0.2406
+
+Test binary classification metrics at threshold=0.31:
+  TP=158 | FP=109 | TN=1018 | FN=199
+  Precision=0.5918
+  Recall=0.4426
+  F1=0.5064
+  ROC-AUC=0.7688
+  PR-AUC=0.5881
+
+Feature importance ranking on test set:
+  01. obstacle_detected            0.6062 +/- 0.0551
+  02. sensor_obstacle_distance     0.5697 +/- 0.1130
+  03. drone_speed                  0.5654 +/- 0.0737
+  04. wind_direction_sin           0.5316 +/- 0.0596
+  05. roll                         0.5273 +/- 0.0686
+  06. pitch                        0.5176 +/- 0.0778
+  07. altitude                     0.4903 +/- 0.1107
+  08. wind_direction_cos           0.4858 +/- 0.0624
+  09. wind_speed                   0.4628 +/- 0.0982

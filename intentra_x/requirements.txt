@@ -1,0 +1,25 @@
+# INTENTRA-X Requirements
+# Cognitive Airspace Intelligence System
+
+# Core dependencies
+numpy>=1.24.0,<2
+torch>=2.0.0
+streamlit>=1.28.0
+plotly>=5.14.0,<6
+pandas>=1.5.0,<2.4
+
+# Live simulation is optional. This repository's demo and offline analysis do
+# not import an AirSim client. Cosys-AirSim uses a separate `cosysairsim` client.
+
+# Additional utilities
+scipy>=1.9.0
+
+# Ground-risk integration and offline/online Hohhot demonstration
+casex>=1.0.5
+scikit-learn>=0.24.1
+numba>=0.60.0,<0.61
+rasterio>=1.2.3
+tifffile>=2022.0.0
+matplotlib>=3.4.1
+imageio>=2.9.0
+requests>=2.25.0

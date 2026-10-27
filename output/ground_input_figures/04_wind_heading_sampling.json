@@ -1,0 +1,11 @@
+{
+  "source": "intentra_x/ground_risk/engine.py:GroundRiskEngine._sample_state",
+  "sample_count": 5000,
+  "shown_count": 100,
+  "random_seed": 42,
+  "wind_direction_input_deg": 90.0,
+  "heading_input_deg": 110.0,
+  "angular_std_deg": 5.0,
+  "measured_flight_data": false,
+  "interpretation": "Supplied-heading case; x is Monte Carlo sample index, not time."
+}

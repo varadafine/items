@@ -1,0 +1,14 @@
+{
+  "slides": 1,
+  "native_objects": [
+    {
+      "slide": 1,
+      "native_shapes": 44,
+      "native_connectors": 17,
+      "embedded_images": 0
+    }
+  ],
+  "text_overflow_warnings": [],
+  "model_source": "intentra_x/attention_risk_lstm.py",
+  "editable": true
+}

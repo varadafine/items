@@ -1,0 +1,49 @@
+{
+  "population_source": "intentra_x\\ground_risk\\data\\hohhot\\hohhot_pop.tif",
+  "population_source_sha256": "c83a13789f2f1f524d75ee36eb8cdfc6b972adfb94f1b236b96027ec0c8e3068",
+  "population_original_shape": [
+    7,
+    19
+  ],
+  "population_computational_shape": [
+    133,
+    268
+  ],
+  "computational_spacing_m": 50.0,
+  "original_angular_pixel_spacing_degrees": [
+    0.0083333333,
+    0.0083333333
+  ],
+  "original_geographic_extent": [
+    111.62,
+    111.7783333327,
+    40.7816666669,
+    40.84
+  ],
+  "computational_geographic_extent": [
+    111.62,
+    111.78,
+    40.78,
+    40.84
+  ],
+  "population_units": "people/km2",
+  "outdoor_fraction_applied_to_figure1": false,
+  "outdoor_time_source": "population.py::_OUTDOOR_FRACTIONS and outdoor_population_fraction",
+  "outdoor_time_values": {
+    "0": 0.05,
+    "3": 0.08,
+    "6": 0.15,
+    "9": 0.35,
+    "12": 0.45,
+    "15": 0.4,
+    "18": 0.35,
+    "21": 0.15,
+    "24": 0.05
+  },
+  "nhaps_json_directly_used_by_current_population_loader": false,
+  "png_files": [
+    "output\\ground_input_figures\\01_population_raster.png",
+    "output\\ground_input_figures\\02_grid_resolution.png",
+    "output\\ground_input_figures\\03_outdoor_population_fraction.png"
+  ]
+}

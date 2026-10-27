@@ -1,0 +1,47 @@
+{
+  "air_risk": {
+    "risk_type": "NORMAL",
+    "risk_probability": 0.025062749162316322,
+    "risk_detected": false,
+    "threshold": 0.31,
+    "risk_factor_weights": {
+      "wind_speed": 0.37173742055892944,
+      "drone_speed": 0.6374614834785461,
+      "roll": 0.4945487976074219,
+      "pitch": 0.5924167633056641,
+      "altitude": 0.6153625249862671,
+      "sensor_obstacle_distance": 0.4637901186943054,
+      "obstacle_detected": 0.5653877258300781,
+      "wind_direction_sin": 0.5772303342819214,
+      "wind_direction_cos": 0.5019363760948181
+    }
+  },
+  "ground_risk": {
+    "mean_strike_risk": 0.010800722246240235,
+    "max_strike_risk": 0.04586817421284936,
+    "mean_fatality_risk": 0.0003664998759045282,
+    "max_fatality_risk": 0.0015573216964911657,
+    "risk_level": "HIGH",
+    "accident_probability": 0.025062749162316322,
+    "altitude_m": 7.757095,
+    "airspeed_mps": 6.708044769408371,
+    "wind_speed_mps": 9.98233,
+    "wind_direction_deg": 270.89654326969014,
+    "heading_mode": "uniform",
+    "ballistic_impact_speed_mps": 12.933188292552451,
+    "glide_impact_speed_mps": 11.973421894279308,
+    "ballistic_impact_energy_j": 334.5347188212316,
+    "glide_impact_energy_j": 286.7256637168142
+  },
+  "joint_assessment": {
+    "air_probability_used_once": 0.025062749162316322,
+    "risk_level": "HIGH",
+    "requires_intervention": true
+  },
+  "demo": {
+    "flight_id": "WIND_003_FLIGHT_1780584775880",
+    "sequence_length": 20,
+    "figure": "intentra_x\\demo_output\\joint_ground_risk.png",
+    "arrays": "intentra_x\\demo_output\\joint_risk_arrays.npz"
+  }
+}

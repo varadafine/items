@@ -1,0 +1,781 @@
+﻿{
+  "files": [
+    {
+      "file": "20260613_201032.dat(1).txt",
+      "bytes": 66995,
+      "sha256": "578aeda9990aed12f9adf81a136498e63caacf38965e1e663a217ce6532935f0",
+      "rows": 450,
+      "columns": 18,
+      "structural_errors": 0,
+      "missing_cells": 0,
+      "numeric_conversion_errors": {
+        "搜索方位": 0,
+        "扫描周期": 0,
+        "目标有效标志": 0,
+        "航迹编号": 0,
+        "幅度": 0,
+        "目标速度": 0,
+        "目标距离": 0,
+        "目标方位": 0,
+        "目标俯仰": 0,
+        "目标高度": 0,
+        "雷达ID": 0,
+        "置信度": 0,
+        "经度": 0,
+        "纬度": 0,
+        "高度": 0
+      },
+      "duplicate_rows": 0,
+      "invalid_local_times": 0,
+      "invalid_utc_times": 0,
+      "utc_raw_counts_if_invalid": {},
+      "time_start": "2026-06-13 20:10:32.987000",
+      "time_end": "2026-06-13 20:13:02.341000",
+      "duration_s": 149.354,
+      "local_time_backsteps": 0,
+      "local_minus_utc_minus_8h_s": {
+        "n": 450,
+        "min": -0.7479999999995925,
+        "p05": -0.6879999999982829,
+        "median": -0.2055000000000291,
+        "p95": 0.15859999999956872,
+        "max": 0.4470000000001164
+      },
+      "radar_ids": {
+        "0": 450
+      },
+      "track_ids": 42,
+      "raw_track_ids_without_radar_scope": 42,
+      "track_numbers_reused_between_radar_ids": 0,
+      "radar_id_details": [
+        {
+          "radar_id": 0,
+          "rows": 450,
+          "track_ids": 42,
+          "start": "2026-06-13 20:10:32.987000",
+          "end": "2026-06-13 20:13:02.341000"
+        }
+      ],
+      "classes_raw": {
+        "未知": 450
+      },
+      "confidence": {
+        "1.0": 450
+      },
+      "flags_raw": {
+        "0": 412,
+        "1": 38
+      },
+      "scan_min": 370,
+      "scan_max": 447,
+      "scan_count": 78,
+      "track_rows": {
+        "n": 42,
+        "min": 2,
+        "p05": 2.0,
+        "median": 7.5,
+        "p95": 27.699999999999974,
+        "max": 56
+      },
+      "track_span_s": {
+        "n": 42,
+        "min": 1.658,
+        "p05": 1.942,
+        "median": 12.7405,
+        "p95": 51.94939999999995,
+        "max": 106.741
+      },
+      "track_dt_s": {
+        "n": 408,
+        "min": 1.272,
+        "p05": 1.7097,
+        "median": 1.943,
+        "p95": 2.1026499999999992,
+        "max": 2.686
+      },
+      "single_row_tracks": 0,
+      "tracks_ge_20_rows": 5,
+      "tracks_ge_60s_span": 2,
+      "tracks_with_class_changes": 0,
+      "gaps_gt_5s": 0,
+      "nonpositive_track_dt": 0,
+      "segments_5s": 42,
+      "segments_ge_20_rows": 5,
+      "windows_20_stride_1_5s_segments": 79,
+      "segments_ge_20_rows_flag0_only": 4,
+      "windows_20_stride_1_flag0_only": 74,
+      "flag_comparison": {
+        "0": {
+          "rows": 412,
+          "terminal_rows": 4,
+          "height_geometry_abs_error": {
+            "n": 412,
+            "min": 8.904336994675077e-05,
+            "p05": 0.001917009509511658,
+            "median": 0.016518858773409306,
+            "p95": 2.435317082509945,
+            "max": 16.68541962555945
+          },
+          "adjacent_pairs_le_5s": 370,
+          "repeat_amp_speed_elevation_height": 2,
+          "abs_previous_speed_residual": {
+            "n": 370,
+            "min": 0.0,
+            "p05": 0.0305499070108032,
+            "median": 1.8449496297196546,
+            "p95": 23.07160090578468,
+            "max": 43.13809651474531
+          },
+          "range_7_5_grid_fraction": 0.8351351351351352
+        },
+        "1": {
+          "rows": 38,
+          "terminal_rows": 38,
+          "height_geometry_abs_error": {
+            "n": 38,
+            "min": 0.0029908570558347947,
+            "p05": 0.007682752692559381,
+            "median": 1.5389354322083468,
+            "p95": 16.47287675824419,
+            "max": 25.40397894904348
+          },
+          "adjacent_pairs_le_5s": 38,
+          "repeat_amp_speed_elevation_height": 4,
+          "abs_previous_speed_residual": {
+            "n": 38,
+            "min": 0.009701952723534468,
+            "p05": 0.014347961972821921,
+            "median": 0.18597713081456035,
+            "p95": 11.317688806722298,
+            "max": 35.91783505154639
+          },
+          "range_7_5_grid_fraction": 0.2631578947368421
+        }
+      },
+      "speed_vs_range_rate_corr_le_5s": -0.6179092535948224,
+      "range_stats": {
+        "n": 450,
+        "min": 127.5,
+        "p05": 165.0,
+        "median": 352.5,
+        "p95": 997.5,
+        "max": 2197.5
+      },
+      "speed_raw_stats": {
+        "n": 450,
+        "min": -11.41,
+        "p05": -7.84,
+        "median": -2.14,
+        "p95": 9.98,
+        "max": 14.26
+      },
+      "relative_height_stats": {
+        "n": 450,
+        "min": -3.35,
+        "p05": 2.482500000000001,
+        "median": 47.07,
+        "p95": 213.11799999999465,
+        "max": 291.24
+      },
+      "altitude_stats": {
+        "n": 450,
+        "min": 16.39,
+        "p05": 22.2225,
+        "median": 66.805,
+        "p95": 232.85249999999468,
+        "max": 310.98
+      },
+      "altitude_offset_stats": {
+        "n": 450,
+        "min": 19.72999999999996,
+        "p05": 19.729999999999997,
+        "median": 19.739999999999995,
+        "p95": 19.74000000000001,
+        "max": 19.74000000000001
+      },
+      "geometry_height_abs_error": {
+        "n": 450,
+        "min": 8.904336994675077e-05,
+        "p05": 0.002034770414317688,
+        "median": 0.017602726263937996,
+        "p95": 3.3363507083751904,
+        "max": 25.40397894904348
+      },
+      "longitude_stats": {
+        "n": 450,
+        "min": 113.5236483011,
+        "p05": 113.52413106582,
+        "median": 113.52626471675,
+        "p95": 113.532190202805,
+        "max": 113.5441631427
+      },
+      "latitude_stats": {
+        "n": 450,
+        "min": 22.364508516,
+        "p05": 22.36699819079,
+        "median": 22.3690366957,
+        "p95": 22.37094352846,
+        "max": 22.3737686107
+      }
+    },
+    {
+      "file": "20260613_224616.dat(1).txt",
+      "bytes": 41935,
+      "sha256": "e55030875223a1141b49d3a36bda3f52b0f53074869896734d5665069a368113",
+      "rows": 283,
+      "columns": 18,
+      "structural_errors": 0,
+      "missing_cells": 0,
+      "numeric_conversion_errors": {
+        "搜索方位": 0,
+        "扫描周期": 0,
+        "目标有效标志": 0,
+        "航迹编号": 0,
+        "幅度": 0,
+        "目标速度": 0,
+        "目标距离": 0,
+        "目标方位": 0,
+        "目标俯仰": 0,
+        "目标高度": 0,
+        "雷达ID": 0,
+        "置信度": 0,
+        "经度": 0,
+        "纬度": 0,
+        "高度": 0
+      },
+      "duplicate_rows": 0,
+      "invalid_local_times": 0,
+      "invalid_utc_times": 0,
+      "utc_raw_counts_if_invalid": {},
+      "time_start": "2026-06-13 22:46:26.280000",
+      "time_end": "2026-06-13 22:50:26.522000",
+      "duration_s": 240.242,
+      "local_time_backsteps": 0,
+      "local_minus_utc_minus_8h_s": {
+        "n": 283,
+        "min": -0.6270000000004075,
+        "p05": -0.5439000000016676,
+        "median": -0.10099999999874854,
+        "p95": 0.1970000000001162,
+        "max": 0.3849999999983993
+      },
+      "radar_ids": {
+        "0": 283
+      },
+      "track_ids": 27,
+      "raw_track_ids_without_radar_scope": 27,
+      "track_numbers_reused_between_radar_ids": 0,
+      "radar_id_details": [
+        {
+          "radar_id": 0,
+          "rows": 283,
+          "track_ids": 27,
+          "start": "2026-06-13 22:46:26.280000",
+          "end": "2026-06-13 22:50:26.522000"
+        }
+      ],
+      "classes_raw": {
+        "未知": 283
+      },
+      "confidence": {
+        "1.0": 283
+      },
+      "flags_raw": {
+        "0": 257,
+        "1": 26
+      },
+      "scan_min": 367,
+      "scan_max": 491,
+      "scan_count": 111,
+      "track_rows": {
+        "n": 27,
+        "min": 2,
+        "p05": 2.0,
+        "median": 7.0,
+        "p95": 28.499999999999996,
+        "max": 50
+      },
+      "track_span_s": {
+        "n": 27,
+        "min": 1.709,
+        "p05": 1.7494,
+        "median": 11.661,
+        "p95": 53.27889999999999,
+        "max": 94.991
+      },
+      "track_dt_s": {
+        "n": 256,
+        "min": 1.564,
+        "p05": 1.799,
+        "median": 1.943,
+        "p95": 2.088,
+        "max": 2.375
+      },
+      "single_row_tracks": 0,
+      "tracks_ge_20_rows": 4,
+      "tracks_ge_60s_span": 1,
+      "tracks_with_class_changes": 0,
+      "gaps_gt_5s": 0,
+      "nonpositive_track_dt": 0,
+      "segments_5s": 27,
+      "segments_ge_20_rows": 4,
+      "windows_20_stride_1_5s_segments": 54,
+      "segments_ge_20_rows_flag0_only": 4,
+      "windows_20_stride_1_flag0_only": 50,
+      "flag_comparison": {
+        "0": {
+          "rows": 257,
+          "terminal_rows": 1,
+          "height_geometry_abs_error": {
+            "n": 257,
+            "min": 8.689760615254727e-05,
+            "p05": 0.0023232986399776227,
+            "median": 0.01780317954129451,
+            "p95": 3.632527229843452,
+            "max": 9.696504641509478
+          },
+          "adjacent_pairs_le_5s": 230,
+          "repeat_amp_speed_elevation_height": 5,
+          "abs_previous_speed_residual": {
+            "n": 230,
+            "min": 0.0,
+            "p05": 0.023542907869813747,
+            "median": 1.8419753086419752,
+            "p95": 8.946543415925298,
+            "max": 31.143460350154488
+          },
+          "range_7_5_grid_fraction": 0.8130434782608695
+        },
+        "1": {
+          "rows": 26,
+          "terminal_rows": 26,
+          "height_geometry_abs_error": {
+            "n": 26,
+            "min": 0.002373814043703959,
+            "p05": 0.009177493381975488,
+            "median": 1.8160853594456365,
+            "p95": 11.131834760343112,
+            "max": 14.44344422604405
+          },
+          "adjacent_pairs_le_5s": 26,
+          "repeat_amp_speed_elevation_height": 6,
+          "abs_previous_speed_residual": {
+            "n": 26,
+            "min": 0.0,
+            "p05": 0.015304578879268171,
+            "median": 0.33458326446369113,
+            "p95": 8.610057602589738,
+            "max": 13.427975270479134
+          },
+          "range_7_5_grid_fraction": 0.3076923076923077
+        }
+      },
+      "speed_vs_range_rate_corr_le_5s": -0.7697688178470663,
+      "range_stats": {
+        "n": 283,
+        "min": 93.25,
+        "p05": 160.52700000000002,
+        "median": 322.5,
+        "p95": 875.9999999999997,
+        "max": 3081.67
+      },
+      "speed_raw_stats": {
+        "n": 283,
+        "min": -16.4,
+        "p05": -8.55,
+        "median": -2.85,
+        "p95": 7.13,
+        "max": 17.82
+      },
+      "relative_height_stats": {
+        "n": 283,
+        "min": -3.16,
+        "p05": 5.406000000000001,
+        "median": 47.85,
+        "p95": 107.824,
+        "max": 130.52
+      },
+      "altitude_stats": {
+        "n": 283,
+        "min": 16.19,
+        "p05": 24.756,
+        "median": 67.19,
+        "p95": 127.17399999999999,
+        "max": 149.87
+      },
+      "altitude_offset_stats": {
+        "n": 283,
+        "min": 19.33999999999999,
+        "p05": 19.339999999999996,
+        "median": 19.349999999999994,
+        "p95": 19.35000000000001,
+        "max": 19.35000000000001
+      },
+      "geometry_height_abs_error": {
+        "n": 283,
+        "min": 8.689760615254727e-05,
+        "p05": 0.0024275656242126686,
+        "median": 0.019077779338982026,
+        "p95": 5.1554432493637155,
+        "max": 14.44344422604405
+      },
+      "longitude_stats": {
+        "n": 283,
+        "min": 113.5237257163,
+        "p05": 113.52398617618,
+        "median": 113.5260042587,
+        "p95": 113.53073672574,
+        "max": 113.5530566045
+      },
+      "latitude_stats": {
+        "n": 283,
+        "min": 22.357647131,
+        "p05": 22.36661811879,
+        "median": 22.3689196884,
+        "p95": 22.370942429590002,
+        "max": 22.3713892479
+      }
+    },
+    {
+      "file": "20260614_234131.dat(1).txt",
+      "bytes": 162042,
+      "sha256": "ba32d2d51d8366bbca460e2e6cd8206520d81dce47031220828f607ae6266998",
+      "rows": 1070,
+      "columns": 18,
+      "structural_errors": 0,
+      "missing_cells": 0,
+      "numeric_conversion_errors": {
+        "搜索方位": 0,
+        "扫描周期": 0,
+        "目标有效标志": 0,
+        "航迹编号": 0,
+        "幅度": 0,
+        "目标速度": 0,
+        "目标距离": 0,
+        "目标方位": 0,
+        "目标俯仰": 0,
+        "目标高度": 0,
+        "雷达ID": 0,
+        "置信度": 0,
+        "经度": 0,
+        "纬度": 0,
+        "高度": 0
+      },
+      "duplicate_rows": 0,
+      "invalid_local_times": 0,
+      "invalid_utc_times": 1070,
+      "utc_raw_counts_if_invalid": {
+        "-17776/80/80_80:-2:0.-160": 1070
+      },
+      "time_start": "2026-06-14 23:41:32.533000",
+      "time_end": "2026-06-14 23:48:52.427000",
+      "duration_s": 439.894,
+      "local_time_backsteps": 0,
+      "local_minus_utc_minus_8h_s": {
+        "n": 0,
+        "min": null,
+        "p05": null,
+        "median": null,
+        "p95": null,
+        "max": null
+      },
+      "radar_ids": {
+        "1": 541,
+        "2": 529
+      },
+      "track_ids": 130,
+      "raw_track_ids_without_radar_scope": 125,
+      "track_numbers_reused_between_radar_ids": 5,
+      "radar_id_details": [
+        {
+          "radar_id": 1,
+          "rows": 541,
+          "track_ids": 65,
+          "start": "2026-06-14 23:41:32.533000",
+          "end": "2026-06-14 23:48:51.971000"
+        },
+        {
+          "radar_id": 2,
+          "rows": 529,
+          "track_ids": 65,
+          "start": "2026-06-14 23:41:45.153000",
+          "end": "2026-06-14 23:48:52.427000"
+        }
+      ],
+      "classes_raw": {
+        "未知": 1070
+      },
+      "confidence": {
+        "1.0": 1070
+      },
+      "flags_raw": {
+        "0": 948,
+        "1": 122
+      },
+      "scan_min": 158,
+      "scan_max": 384,
+      "scan_count": 227,
+      "track_rows": {
+        "n": 130,
+        "min": 1,
+        "p05": 2.0,
+        "median": 6.0,
+        "p95": 19.0,
+        "max": 45
+      },
+      "track_span_s": {
+        "n": 130,
+        "min": 0.0,
+        "p05": 1.94245,
+        "median": 9.716,
+        "p95": 34.8838,
+        "max": 86.18
+      },
+      "track_dt_s": {
+        "n": 940,
+        "min": 1.13,
+        "p05": 1.704,
+        "median": 1.943,
+        "p95": 2.088,
+        "max": 7.773
+      },
+      "single_row_tracks": 1,
+      "tracks_ge_20_rows": 5,
+      "tracks_ge_60s_span": 2,
+      "tracks_with_class_changes": 0,
+      "gaps_gt_5s": 1,
+      "nonpositive_track_dt": 0,
+      "segments_5s": 131,
+      "segments_ge_20_rows": 5,
+      "windows_20_stride_1_5s_segments": 78,
+      "segments_ge_20_rows_flag0_only": 5,
+      "windows_20_stride_1_flag0_only": 73,
+      "flag_comparison": {
+        "0": {
+          "rows": 948,
+          "terminal_rows": 8,
+          "height_geometry_abs_error": {
+            "n": 948,
+            "min": 2.3193898499584975e-06,
+            "p05": 0.002095319303535348,
+            "median": 0.01714533403012053,
+            "p95": 3.384965380209474,
+            "max": 14.717434789620853
+          },
+          "adjacent_pairs_le_5s": 818,
+          "repeat_amp_speed_elevation_height": 20,
+          "abs_previous_speed_residual": {
+            "n": 818,
+            "min": 0.0,
+            "p05": 0.02305633992147891,
+            "median": 1.44,
+            "p95": 18.603760775163956,
+            "max": 46.71
+          },
+          "range_7_5_grid_fraction": 0.7310513447432763
+        },
+        "1": {
+          "rows": 122,
+          "terminal_rows": 122,
+          "height_geometry_abs_error": {
+            "n": 122,
+            "min": 5.624391825165276e-05,
+            "p05": 0.004204068033991515,
+            "median": 1.6398921180794748,
+            "p95": 13.596327083078576,
+            "max": 21.93769253996095
+          },
+          "adjacent_pairs_le_5s": 121,
+          "repeat_amp_speed_elevation_height": 12,
+          "abs_previous_speed_residual": {
+            "n": 121,
+            "min": 0.001810699588482123,
+            "p05": 0.010617283950613787,
+            "median": 0.18723338485325236,
+            "p95": 15.748756789378394,
+            "max": 36.197839092315625
+          },
+          "range_7_5_grid_fraction": 0.2396694214876033
+        }
+      },
+      "speed_vs_range_rate_corr_le_5s": -0.5990958912608548,
+      "range_stats": {
+        "n": 1070,
+        "min": 72.71,
+        "p05": 157.6845,
+        "median": 315.0,
+        "p95": 1275.6535,
+        "max": 3381.23
+      },
+      "speed_raw_stats": {
+        "n": 1070,
+        "min": -29.6,
+        "p05": -12.99,
+        "median": -2.89,
+        "p95": 8.5,
+        "max": 20.21
+      },
+      "relative_height_stats": {
+        "n": 1070,
+        "min": -9.9,
+        "p05": -3.64,
+        "median": 29.39,
+        "p95": 140.13649999999993,
+        "max": 445.42
+      },
+      "altitude_stats": {
+        "n": 1070,
+        "min": 8.9,
+        "p05": 15.17,
+        "median": 48.2,
+        "p95": 158.94099999999992,
+        "max": 464.22
+      },
+      "altitude_offset_stats": {
+        "n": 1070,
+        "min": 18.799999999999983,
+        "p05": 18.799999999999997,
+        "median": 18.809999999999988,
+        "p95": 18.810000000000002,
+        "max": 18.810000000000016
+      },
+      "geometry_height_abs_error": {
+        "n": 1070,
+        "min": 2.3193898499584975e-06,
+        "p05": 0.0021405019575793105,
+        "median": 0.019215971394475062,
+        "p95": 5.239415066377141,
+        "max": 21.93769253996095
+      },
+      "longitude_stats": {
+        "n": 1070,
+        "min": 113.521128875,
+        "p05": 113.522141093145,
+        "median": 113.5253220006,
+        "p95": 113.532978925855,
+        "max": 113.5548138163
+      },
+      "latitude_stats": {
+        "n": 1070,
+        "min": 22.3461534106,
+        "p05": 22.36557312235,
+        "median": 22.369578289499998,
+        "p95": 22.377095852175,
+        "max": 22.3827272183
+      }
+    }
+  ],
+  "position_fits": [
+    {
+      "source_file": "20260613_201032.dat(1).txt",
+      "mode": "slant_as_horizontal",
+      "lon0_fit": 113.52330028079801,
+      "lat0_fit": 22.370490652702706,
+      "residual_m": {
+        "n": 450,
+        "min": 0.08605828407528605,
+        "p05": 0.32200551443692066,
+        "median": 2.7862232608707553,
+        "p95": 28.537997468948255,
+        "max": 40.07827555521751
+      }
+    },
+    {
+      "source_file": "20260613_201032.dat(1).txt",
+      "mode": "horizontal_cos_elevation",
+      "lon0_fit": 113.5233285509185,
+      "lat0_fit": 22.37048143703076,
+      "residual_m": {
+        "n": 450,
+        "min": 0.0032523038965932994,
+        "p05": 0.10694456174356684,
+        "median": 0.5442732690728925,
+        "p95": 1.5743686192552697,
+        "max": 2.7808493848192257
+      }
+    },
+    {
+      "source_file": "20260613_224616.dat(1).txt",
+      "mode": "slant_as_horizontal",
+      "lon0_fit": 113.52331276366003,
+      "lat0_fit": 22.37049207548908,
+      "residual_m": {
+        "n": 283,
+        "min": 0.3690123810961943,
+        "p05": 1.0807930190846362,
+        "median": 2.44006993986041,
+        "p95": 22.314633925779734,
+        "max": 40.7793329847532
+      }
+    },
+    {
+      "source_file": "20260613_224616.dat(1).txt",
+      "mode": "horizontal_cos_elevation",
+      "lon0_fit": 113.5233346797845,
+      "lat0_fit": 22.370479845178117,
+      "residual_m": {
+        "n": 283,
+        "min": 0.007365595423721062,
+        "p05": 0.04926535576317793,
+        "median": 0.3549317318475344,
+        "p95": 1.4164041938363987,
+        "max": 6.885855284011942
+      }
+    },
+    {
+      "source_file": "20260614_234131.dat(1).txt",
+      "mode": "slant_as_horizontal",
+      "lon0_fit": 113.52327849166602,
+      "lat0_fit": 22.37047072316523,
+      "residual_m": {
+        "n": 1070,
+        "min": 0.02133803028363005,
+        "p05": 0.3188123379858455,
+        "median": 1.4215487577376382,
+        "p95": 19.515191182579347,
+        "max": 41.280327355989705
+      }
+    },
+    {
+      "source_file": "20260614_234131.dat(1).txt",
+      "mode": "horizontal_cos_elevation",
+      "lon0_fit": 113.52328401081297,
+      "lat0_fit": 22.370461274108948,
+      "residual_m": {
+        "n": 1070,
+        "min": 0.01145809838467482,
+        "p05": 0.1329514518631694,
+        "median": 0.957673588414736,
+        "p95": 4.524245412587152,
+        "max": 13.47268655938464
+      }
+    }
+  ],
+  "totals": {
+    "rows": 1803,
+    "file_scoped_track_ids": 199,
+    "observed_duration_sum_s": 829.49,
+    "classes_raw": {
+      "未知": 1803
+    },
+    "flags_raw": {
+      "0": 1617,
+      "1": 186
+    },
+    "tracks_ge_20_rows": 14,
+    "tracks_with_class_changes": 0,
+    "segments_ge_20_rows": 14,
+    "windows_20_stride_1_5s_segments": 211,
+    "segments_ge_20_rows_flag0_only": 13,
+    "windows_20_stride_1_flag0_only": 197,
+    "negative_relative_height_rows": 104,
+    "flag1_rows_at_track_end": 186,
+    "track_length_bins": {
+      "1_to_2": 22,
+      "3_to_5": 57,
+      "6_to_10": 72,
+      "11_to_19": 34,
+      "20_or_more": 14
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "slide_count": 1,
+  "validation": [
+    {
+      "slide": 1,
+      "native_shapes": 602,
+      "native_connectors": 73,
+      "embedded_images": 0
+    }
+  ],
+  "text_overflow_warnings": [],
+  "model": "FeatureAttentionRiskLSTM(n_features=12, hidden=64, num_layers=2)",
+  "reference_layout": "feature tensor and gating; two-layer temporal unrolling; internal LSTM cell",
+  "native_editability": true,
+  "matrix_colors_are_schematic": true
+}
